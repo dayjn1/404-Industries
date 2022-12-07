@@ -260,6 +260,8 @@ multiple terms then each term begins with an UPPERCASE letter.
 * Have a presentable product at every Sprint review, do NOT have just pieces of the project working on multiple machines
 * Remeber the project is also about learning so take notes of the steps you take 
 * Having an hour meeting before class is a good way to go over the expected hours of work
+* Build a local database so you can run code on your local machine at home
+* Set up gitignore early - First thing you should do 
 
 # Resources/References
 [MVC Tutorial](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-6.0)

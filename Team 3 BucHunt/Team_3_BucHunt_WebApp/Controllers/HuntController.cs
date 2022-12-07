@@ -5,8 +5,7 @@
 * --------------------------------------------------------------------------- 
 * Author’s name and email: Dante Hays, haysdc@etsu.edu
 * Creation Date: Nov 01, 2022
-* Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
-*                Hannah Taylor taylorhm1@etsu.edu Dec 01, 2022
+* Last modified: Janine Day dayjn1@etsu.edu Dec 5, 2022
 * --------------------------------------------------------------------------- 
 */
 
@@ -172,7 +171,7 @@ public class HuntController : Controller
     * Method Purpose: Checks a passed answer to see if it is correct <br>
     * <hr>
     * Date created: Nov 26,2022 <br>
-    * Date last modified: Nov 28,2022 <br>
+    * Date last modified: Dec 5,2022 <br>
     * <hr>
     * Notes on specifications, special algorithms, and assumptions: N/A
     * <hr> 
@@ -188,8 +187,6 @@ public class HuntController : Controller
                 correctAnswer = t.Answer;
         }
 
-        // either pull the task from the list so they can answer again
-        // or pass a var to make it inaccessible
         if (task.Answer == correctAnswer)
         {
             TempData["Message"] = "Correct!";
@@ -197,7 +194,6 @@ public class HuntController : Controller
         }
         else
         {
-            //return RedirectToAction("AnswerForm", "Hunt", false);
             TempData["Message"] = "Incorrect Answer";
             return RedirectToAction("Index", "Hunt");
         }

@@ -1,13 +1,13 @@
 ﻿@{
 /**
-* ---------------------------------------------------------------------------
-* File name: _TaskList.cshtml
-* Project name: 404 Industries BucHunt
-* ---------------------------------------------------------------------------
-* Author’s name and email: Dante Hays, haysdc@etsu.edu
-* Creation Date: Nov 20, 2022
-* Last modified: Dante Hays haysdc@etsu.edu Nov 28, 2022
-* ---------------------------------------------------------------------------
+    * ---------------------------------------------------------------------------
+    * File name: _TaskList.cshtml
+    * Project name: 404 Industries BucHunt
+    * ---------------------------------------------------------------------------
+    * Author’s name and email: Dante Hays, haysdc@etsu.edu
+    * Creation Date: Nov 20, 2022
+    * Last modified: Janine Day dayjn1@etsu.edu Dec 5, 2022
+    * ---------------------------------------------------------------------------
 */
 }
 @using System;
@@ -46,8 +46,6 @@
             <h2 style="font-family:Norwester"> @Html.Raw(locationName)</h2>
             Html.RenderPartial("_TaskAnswerForm", temp);
 
-            //<dt><a style="font-family:Norwester" id=@Html.Raw(task.TaskId) href=@{Html.RenderPartial("_TaskAnswerForm", (Team_3_BucHunt_WebApp.Models.Task)task);}>@locationName</a></dt>
-            //<dd style="font-family:Norwester"> @Html.Raw(task.Question)</dd>
             <br>
         }
         i++;
